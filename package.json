@@ -1,0 +1,26 @@
+{
+  "name": "moralbooster",
+  "version": "1.0.0",
+  "description": "team profile generator",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdavis525/moralBooster.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdavis525/moralBooster/issues"
+  },
+  "homepage": "https://github.com/sdavis525/moralBooster#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2",
+    "jest": "^27.5.1"
+  }
+}
