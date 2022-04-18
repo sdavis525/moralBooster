@@ -1,17 +1,25 @@
-const Employee = require("./Employee");
+const Engineer = require("../lib/engineer");
+const employeeData = "seth";
+const idData = 555;
+const emailData = "seth@email.com";
+const githubUser = "seth555";
 
-class Engineer extends Employee {
-    constructor (name, id, email, github) {
-        super (name, id , email)
-        this.github = github;
-    }
-    getGithub () {
-        return this.github;
+test("get engineer github username", () => {
 
-    }
-    getRole () {
-        return "Engineer";
-    }
-}
+    const employee = new Engineer (employeeData,idData,emailData, githubUser); 
+    expect(employee.githubUser).toBe(this.github);
+});
 
-module.exports = Engineer;
+//generate name with getGithub()
+test("getGithub()", () => {
+    const employee = new Engineer (employeeData,idData,emailData, githubUser); 
+    expect(employee.getGithub()).toBe(this.github);
+});
+
+//getrole ()
+
+test("getRole()", () => {
+  
+   const employee = new Engineer (employeeData,idData,emailData, githubUser); 
+    expect(employee.getRole()).toEqual(Engineer);
+});
