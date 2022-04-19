@@ -1,3 +1,6 @@
+const engineer = require("../lib/engineer");
+const manager = require("../lib/manager");
+const intern = require("../lib/intern")
 
 
 const addManager = manager => {
@@ -51,7 +54,7 @@ const addManager = manager => {
  `
 }
 
-const addEngineer = Engineer => {
+const addEngineer = engineer => {
 
     return `
 
@@ -192,9 +195,9 @@ const generateProfileHtml = teamMemProfile => {
     
         return `
 
-        <!DOCTYPE html>
-<html lang="en">
-<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -233,7 +236,7 @@ const generateProfileHtml = teamMemProfile => {
         <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 ">
         <div class="flex justify-end px-4 pt-4">
 
-        ${teamMemProfile}
+        ${addEngineer, addIntern, addManager(teamMemProfile)}
 
 
 

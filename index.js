@@ -26,7 +26,7 @@ function addManager() {
         {
             type: "input",
             name: "managerName",
-            message: "Who is the manager of your team? please enter name"
+            message: "Who is the manager of your team? please enter name?"
         },
 
       
@@ -180,12 +180,7 @@ fs.writeFile("./dist/index.html", templatePage(teamMems), err => {
         return console.error(err);
     } else {
         console.log("Congratulations your team profile has been created! Head over to your HTML to see the results!");
-        fs.copyFile( "./dist/style.css", err => {
-            if (err) {
-                console.error(err);
-                return;
-            };
-        });
+        
     };
 });
 }
