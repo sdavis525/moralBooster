@@ -9,7 +9,6 @@ const addManager = manager => {
     <div class = "container p-20 grid xl:grid-cols-3 gap-3">
 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 ">
     <div class="flex justify-end px-4 pt-4">
-
         <button id="dropdownButton" data-dropdown-toggle="dropdown" class="hidden sm:inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg>
         </button>
@@ -44,7 +43,6 @@ const addManager = manager => {
             <p class="officeNumber">${manager.officeNumber}</p>
         </div>
     </div>
-
     <p class="email"><a href="mailto:${manager.email}" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Email</a></p>
     
         </div>
@@ -57,7 +55,6 @@ const addManager = manager => {
 const addEngineer = engineer => {
 
     return `
-
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     <div class="flex justify-end px-4 pt-4">
         <button id="dropdownButton" data-dropdown-toggle="dropdown" class="hidden sm:inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
@@ -93,14 +90,12 @@ const addEngineer = engineer => {
             <p class="id">${engineer.id}</p>
         </div>
     </div>
-
     <p class="email"><a href="mailto:${engineer.email}" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Email</a></p>
     <p class="github"><a href="https://github.com/${engineer.githubUser}" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Github</a></p>
     
         </div>
     </div>
 </div>
-
     `
 
 
@@ -148,14 +143,12 @@ const addIntern = intern => {
             <p class="school">${intern.schoolName}</p>
         </div>
     </div>
-
     <p class="email"><a href="mailto:${intern.email}" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Email</a></p>
     
         </div>
     </div>
 </div>
 </div>
-
 `
 
 }
@@ -194,7 +187,6 @@ const templatePage = (data) => {
 const generateProfileHtml = teamMemProfile => {
     
         return `
-
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -231,15 +223,12 @@ const generateProfileHtml = teamMemProfile => {
           </div>
         </div>
       </nav>
-
       <div class = "container p-20 grid xl:grid-cols-3 gap-3">
         <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 ">
         <div class="flex justify-end px-4 pt-4">
-
-        ${addEngineer, addIntern, addManager(teamMemProfile)}
-
-
-
+        ${addManager(teamMemProfile)}
+        ${addEngineer(teamMemProfile)}
+        ${addIntern(teamMemProfile)}
         
         
         
