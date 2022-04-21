@@ -18,8 +18,7 @@ MIT
   
  
   ## project:
-  Moral Booster
-
+ Team profile generator
   
   ## email:
   davisk28@email.franklin.edu
