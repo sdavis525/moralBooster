@@ -1,12 +1,10 @@
-const engineer = require("../lib/engineer");
-const manager = require("../lib/manager");
-const intern = require("../lib/intern")
 
 
-const addManager = manager => {
+
+const addManager = (manager) => {
     return `
     
-    <div class = "container p-20 grid xl:grid-cols-3 gap-3">
+    
 <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 ">
     <div class="flex justify-end px-4 pt-4">
         <button id="dropdownButton" data-dropdown-toggle="dropdown" class="hidden sm:inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
@@ -33,26 +31,27 @@ const addManager = manager => {
 <div class="flex flex-col items-center pb-10">
     <div class="card-header">
     <img class="mb-3 w-24 h-24 rounded-full shadow-lg bg-gray-200" src="/images/intern.jpg" alt="image">
-        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">${manager.name}</h5>
+        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">soraya</h5>
         <span class="text-sm text-gray-500 dark:text-gray-400">Manager 📆</span>
     </div>
 <div class="flex mt-4 space-x-3 lg:mt-6">
     <div class="card-body">
         <div class="text-sm text-gray-500 dark:text-gray-400">
-            <p class="id">${manager.id}</p>
-            <p class="officeNumber">${manager.officeNumber}</p>
+            <p class="id">777</p>
+            <p class="officeNumber">5555</p>
         </div>
     </div>
-    <p class="email"><a href="mailto:${manager.email}" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Email</a></p>
+    <p class="email"><a href="mailto:soraya@email.com" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Email</a></p>
     
         </div>
     </div>
 </div>
     
- `
-}
+ `;
+ 
+};
 
-const addEngineer = engineer => {
+const addEngineer = (engineer) => {
 
     return `
     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -81,28 +80,28 @@ const addEngineer = engineer => {
 <div class="flex flex-col items-center pb-10">
     <div class= "card-header">
     <img class="mb-3 w-24 h-24 rounded-full shadow-lg bg-gray-200" src="/images/intern.jpg" alt="image">
-        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">${engineer.name}</h5>
+        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">dj</h5>
         <span class="text-sm text-gray-500 dark:text-gray-400">Engineer 👩🏾‍💻</span>
     </div>
 <div class="flex mt-4 space-x-3 lg:mt-6">
     <div class="card-body">
         <div class="text-sm text-gray-500 dark:text-gray-400">
-            <p class="id">${engineer.id}</p>
+            <p class="id">222</p>
         </div>
     </div>
-    <p class="email"><a href="mailto:${engineer.email}" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Email</a></p>
-    <p class="github"><a href="https://github.com/${engineer.githubUser}" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Github</a></p>
+    <p class="email"><a href="mailto:dj@email.com" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Email</a></p>
+    <p class="github"><a href="https://github.com/dj" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Github</a></p>
     
         </div>
     </div>
 </div>
-    `
+    `;
 
 
-}
+};
 
 
-const addIntern = intern => {
+const addIntern = (intern) => {
 
     return `
     
@@ -132,59 +131,59 @@ const addIntern = intern => {
 <div class="flex flex-col items-center pb-10">
     <div class= "card-header">
     <img class="mb-3 w-24 h-24 rounded-full shadow-lg bg-gray-200" src="/images/intern.jpg" alt="image">
-        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">${intern.name}</h5>
+        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">lauren</h5>
         <span class="text-sm text-gray-500 dark:text-gray-400">Intern ​👨‍💻​🆔​👩‍💻​</span>
     </div>
    
 <div class="flex mt-4 space-x-3 lg:mt-6">
     <div class="card-body">
         <div class="text-sm text-gray-500 dark:text-gray-400">
-            <p class="id">${intern.id}</p>
-            <p class="school">${intern.schoolName}</p>
+            <p class="id">444</p>
+            <p class="school">unlv</p>
         </div>
     </div>
-    <p class="email"><a href="mailto:${intern.email}" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Email</a></p>
+    <p class="email"><a href="mailto:lauren@email.com" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Email</a></p>
     
         </div>
     </div>
 </div>
 </div>
-`
+`;
 
-}
+};
 
-const templatePage = (data) => {
+templatePage = (data) => {
 
-    pageArr = [];
+    pageArray = [];
 
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i<data.length; i++) {
         const teamMem = data[i];
-        const role = teamMem.role;
+        const role = teamMem.getRole();
 
-        if (role === "manager") {
+        if (role === 'manager') {
             const managerProfile = addManager(teamMem);
 
-            pageArr.push(managerProfile);
+            pageArray.push(managerProfile);
         }
-        if (role === "intern") {
+        if (role === 'intern') {
             const internProfile = addIntern(teamMem);
 
-            pageArr.push(internProfile);
+            pageArray.push(internProfile);
         }
-        if (role === "engineer") {
+        if (role === 'engineer') {
             const engineerProfile = addEngineer(teamMem);
 
-            pageArr.push(engineerProfile);
+            pageArray.push(engineerProfile);
         }
     }
 
-    const teamMemProfile = pageArr.join("");
+    const teamMemProfile = pageArray.join('');
 
     const generateProfile = generateProfileHtml(teamMemProfile);
     return generateProfile;
-}
+};
 
-const generateProfileHtml = teamMemProfile => {
+const generateProfileHtml = (teamMemProfile) => {
     
         return `
     <!DOCTYPE html>
@@ -224,8 +223,7 @@ const generateProfileHtml = teamMemProfile => {
         </div>
       </nav>
       <div class = "container p-20 grid xl:grid-cols-3 gap-3">
-        <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 ">
-        <div class="flex justify-end px-4 pt-4">
+        
         ${addManager(teamMemProfile)}
         ${addEngineer(teamMemProfile)}
         ${addIntern(teamMemProfile)}
