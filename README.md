@@ -45,6 +45,10 @@ MIT
   
   ## test
   
+  ##license:
+
+  MIT https://opensource.org/licenses/MIT
+  
   
   Copyright 2022 by undefined.
 
