@@ -42,7 +42,12 @@ MIT
   
   
   ## test:
-  ![team profile vid](https://user-images.githubusercontent.com/98237529/164354891-378a4a7e-2b38-4640-b087-033c7db819fc.jpg)
+  
+  
+
+https://user-images.githubusercontent.com/98237529/164355185-b00b8ac4-388c-4260-9e55-f44443a896f6.mp4
+
+
 
   <img width="1512" alt="Screen Shot 2022-04-20 at 9 44 21 PM" src="https://user-images.githubusercontent.com/98237529/164355049-063182fc-1cc2-4575-a714-01a1b4dc48a3.png">
 
