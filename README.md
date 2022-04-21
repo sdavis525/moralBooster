@@ -1,7 +1,5 @@
 # moralBooster
 
-# undefined
-
 MIT
   
   # Table of Content
@@ -45,7 +43,7 @@ MIT
   
   ## test
   
-  ##license:
+## license:
 
   MIT https://opensource.org/licenses/MIT
   
